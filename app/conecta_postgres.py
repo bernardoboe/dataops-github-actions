@@ -14,7 +14,7 @@ ns = api.namespace('alunos', description='Operações de conexão com PostgeSQL'
 def get_connection():
     conn = psycopg2.connect(
         host="db",
-        dbname="postgres"
+        dbname="postgres",
         user="postgres",
         password="senha123"
     )
